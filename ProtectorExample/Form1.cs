@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,12 +34,13 @@ namespace ProtectorExample
         }
         private void Renameasd(AssemblyDefinition aahf)
         {
-            TypeDefinition wtf = null;
-            foreach(TypeDefinition k in aahf.MainModule.Types)
+            TypeDefinition lol = null;
+            MethodDefinition asd = null;
+            foreach (TypeDefinition k in aahf.MainModule.Types)
             {
-                if(k.Name != "<Module>")
+                foreach(MethodDefinition qwe in k.Methods )
                 {
-                    k.Name = Randoo(12);
+                    qwe.Name = Rando(12);
                 }
             }
         }
