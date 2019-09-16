@@ -79,7 +79,7 @@ namespace ProtectorExample
         {
             SaveFileDialog sfd = new SaveFileDialog();
             sfd.Filter = ".exe | *.exe";
-            sfd.FileName = String.Format("{0}_obf", Path.GetFileNameWithoutExtension(textBox1.Text));
+            sfd.FileName = String.Format("{0}_protected", Path.GetFileNameWithoutExtension(textBox1.Text));
             if (sfd.ShowDialog() == DialogResult.OK)
             {
                 if (checkBox1.Checked)
